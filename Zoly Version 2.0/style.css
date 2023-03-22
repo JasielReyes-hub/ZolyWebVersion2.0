@@ -38,6 +38,7 @@ body {
   user-select: none;
   
 }
+
 .sidebar ul a{
   display: block;
   height: 100%;
@@ -46,7 +47,8 @@ body {
   font-size: 20px;
   color: white;
   padding-left: 40px;
-  padding-top: 70px;
+  padding-top: 10px;
+  padding: 55px;
   box-sizing: border-box;
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255, 255, 255, 0.249);
@@ -54,15 +56,17 @@ body {
 }
 ul li:hover a{
   padding-left: 50px;
-  color: rgb(201, 191, 0);
+  color: rgb(178, 172, 52);
   transition: 0.8s;
 }
+
 .sidebar ul a i{
   margin-right: 16px;
 }
 #check{
   display: none;
 }
+
 label #btn,label #cancel{
   position: absolute;
   background: #310404;
@@ -77,6 +81,7 @@ label #btn{
   padding: 6px 12px;
   transition: all .5s;
 }
+
 label #cancel{
   z-index: 1111;
   left: -195px;
@@ -330,11 +335,17 @@ footer .container{
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   border: 5px solid #ccc;
   border-radius: 5px;
+
+}
+
+form:hover{
+  background-color: #460b06;
+  transition: 0.3s;
 }
 
 label {
@@ -343,8 +354,12 @@ label {
 
 input[type="tel"],
 input[type="email"] {
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0;
-  border-radius: 5px;
+  border-radius: 18px;
   border: 1px solid #ccc;
+}
+
+#zolylogo.img:hover{
+  color: rgb(178, 172, 52);
 }
