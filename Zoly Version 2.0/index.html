@@ -98,13 +98,16 @@
   <br><br>
   <form method="post" action="guardar.php">
     <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1234567890" required>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1234567890">
   
     <label for="correo">Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" placeholder="Ej: ejemplo@ejemplo.com" required>
+    <input type="email" id="correo" name="correo" placeholder="Ej: ejemplo@ejemplo.com">
     <br><br>
     <button type="submit">Guardar</button>
   </form>
+  <?php
+  include("guardar.php");
+  ?>
 </section>
 
 <footer>
