@@ -6,6 +6,7 @@
     <!-- <NO BORRAR LINK PARA EL NAV> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Fira+Sans+Extra+Condensed&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -30,7 +31,7 @@
 <section id="hero">
   <h1>¿Estás Interesado <br>En mejorar tus ingresos?</h1>
   <br>
-  <button>¡APLICÁ YA!</button>
+  <button  onclick ="location.href='#final'" href="#final">¡CONTACTANOSYA!</button>
 </section>
 
 <section id="somos-proya" >
@@ -96,18 +97,13 @@
 <section id="final">
   <h2>¿Estás listo para mejorar tus ingresos?</h2>
   <br><br>
-  <form method="post" action="guardar.php">
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1234567890">
+  <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos a través de nuestras redes sociales, donde estaremos encantados de ayudarte.<br>También puedes comunicarte con nosotros directamente a través de WhatsApp, para una respuesta rápida y personalizada.</p>
+  <br><br>
+  <a href="https://api.whatsapp.com/send?phone=+524792901352&text=¡Hola! Buen dia estoy interesado en generar nuevos ingresos 😅" target="_blank" class="whatsapp-button">
+    <span>¡Si estas interesado, contactanos vía What´s App!</span>
   
-    <label for="correo">Correo electrónico:</label>
-    <input type="email" id="correo" name="correo" placeholder="Ej: ejemplo@ejemplo.com">
-    <br><br>
-    <button type="submit">Guardar</button>
-  </form>
-  <?php
-  include("guardar.php");
-  ?>
+    <i class="fab fa-whatsapp"></i>
+  </a>  
 </section>
 
 <footer>

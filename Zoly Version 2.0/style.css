@@ -68,7 +68,7 @@ ul li:hover a{
 }
 
 label #btn,label #cancel{
-  position: absolute;
+  position: fixed;
   background: #310404;
   border-radius: 3px;
   cursor: pointer;
@@ -363,3 +363,27 @@ input[type="email"] {
 #zolylogo.img:hover{
   color: rgb(178, 172, 52);
 }
+
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+.whatsapp-button i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* Si estás utilizando Font Awesome, asegúrate de importar los estilos correspondientes en tu archivo HTML o CSS */

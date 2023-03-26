@@ -1,31 +1,27 @@
 <?php
 // Conexión a la base de datos
-include("con_db.php");
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "zolydbform";
 
-if (isset($_POST['guardar'])){
-  if (strlen($_POST['telefono']) >= 1 && strlen($_POST['correo']) >= 1) {
-      $telefono = trim($_POST ['telefono']);
-      $correo = trim($_POST ['correo']);
-      $fechareg = date("d/m/yy");
-      $consulta = "INSERT INTO datos(id, numero, correo, fecha_reg) VALUES ('$telefono','$correo','$fechareg')";
-      $resultado = mysqli_query($conex,$consulta);
-      if ($resultado){
-        ?>
-        <h2> Registro Guardado</h3
-        <?php
-      } else {
-        ?>
-        h2> Registro no Guardado </h2>
-        <?php
-      }
-
-    } else{
-      ?>
-      <h3>Por favor complete los datos</h3>
-      <?php
-
-    }
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+  die("Conexión fallida: " . mysqli_connect_error());
 }
 
+// Recuperar los datos del formulario
+$telefono = mysqli_real_escape_string($conn, $_POST['telefono']);
+$correo = mysqli_real_escape_string($conn, $_POST['correo']);
 
+// Insertar los datos en la base de datos
+$sql = "INSERT INTO datos (telefono, correo) VALUES ('$telefono', '$correo')";
+if (mysqli_query($conn, $sql)) {
+  echo "Datos guardados correctamente";
+} else {
+  echo "Error al guardar los datos: " . mysqli_error($conn);
+}
+
+// Cerrar la conexión
+mysqli_close($conn);
 ?>
