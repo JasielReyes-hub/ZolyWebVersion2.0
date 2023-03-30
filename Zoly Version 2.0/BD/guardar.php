@@ -1,11 +1,11 @@
 <?php
 // Conexión a la base de datos
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "zolydbform";
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($localhost, $root, $zolydbform);
 if (!$conn) {
   die("Conexión fallida: " . mysqli_connect_error());
 }
@@ -15,8 +15,10 @@ $telefono = mysqli_real_escape_string($conn, $_POST['telefono']);
 $correo = mysqli_real_escape_string($conn, $_POST['correo']);
 
 // Insertar los datos en la base de datos
-$sql = "INSERT INTO datos (telefono, correo) VALUES ('$telefono', '$correo')";
-if (mysqli_query($conn, $sql)) {
+$stmt = mysqli_prepare($conn, "INSERT INTO datos (telefono, correo) VALUES (?, ?)");
+mysqli_stmt_bind_param($stmt, "ss", $telefono, $correo);
+
+if (mysqli_stmt_execute($stmt)) {
   echo "Datos guardados correctamente";
 } else {
   echo "Error al guardar los datos: " . mysqli_error($conn);
