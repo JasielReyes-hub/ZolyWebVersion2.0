@@ -16,3 +16,7 @@ setInterval(changeColor, 3000);
 
 // Ejecutar la función de reinicio de color después de 1 segundo
 setTimeout(resetColor, 1000);
+
+
+
+
