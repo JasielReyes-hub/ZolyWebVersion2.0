@@ -10,6 +10,8 @@
   font-family: Be+Vietnam+Pro;
 }
 
+
+
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 h3{ font-size: 2em;}
@@ -22,6 +24,13 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: antiquewhite;
 }
+
+.logotipo{
+    width: 100px;
+    padding: 10px 0;
+    margin-left: 60px;
+}
+
 
 
 #somos-proya {
@@ -64,7 +73,7 @@ span:hover{
   background-color: #fff;
 }
 
-.sidebar {
+/* .sidebar {
   position: fixed;
   left: -250px;
   width: 250px;
@@ -147,7 +156,7 @@ label #cancel{
 }
 #check:checked ~ section{
   margin-left: 250px;
-}
+} */
 
 html{
   scroll-behavior:  smooth;
