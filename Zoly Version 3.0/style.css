@@ -486,10 +486,11 @@ span{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   margin: 40px 40px;
 }
+
 
 .mapa:hover{
   border-radius: 25px 25px 25px 25px;
@@ -642,7 +643,7 @@ figcaption {
   padding: 10px 20px;
   font-size: 18px;
   border-radius: 5px;
-  background-color: #af4c4c;
+  background-color:   #4caf50;
   color: white;
   border: none;
   cursor: pointer;
