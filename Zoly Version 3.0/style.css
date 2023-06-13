@@ -62,6 +62,7 @@ span:hover{
 #caracteristicas{
   background-color: #fff;
   margin: 20px;
+  padding: 20px;
 }
 
 
@@ -77,6 +78,7 @@ span:hover{
 
 #final{
   margin: 20px;
+  padding: 20px;
   background-color: #fff;
 }
 
@@ -309,7 +311,9 @@ section.final{
   margin-block-start: auto;
   transition: 0.5s ease-in-out;
   border-radius: 25px 25px 25px 25px;
+  
 }
+
 
 
 
@@ -655,7 +659,7 @@ figcaption {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  border-radius: 10% 20%;
+  border-radius: 20px;
   width: 50%;
 }
 
@@ -670,7 +674,7 @@ figcaption {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  border-radius:  10% 20%;
+  border-radius: 20px;
   width: 50%;
 }
 
@@ -727,3 +731,7 @@ figcaption {
   background-color: #128c7e;
 }
 
+.contacto-texto{
+  padding: 20px;
+  margin: 20px;
+}
