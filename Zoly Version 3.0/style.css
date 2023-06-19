@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Fira+Sans+Extra+Condensed&family=Raleway:wght@100&display=swap');
 
 *{
@@ -7,7 +6,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: Be+Vietnam+Pro;
+  
 }
 
 
@@ -22,6 +21,7 @@ label{ font-size: 1.85em;}
 
 body {
   font-family: 'Be+Vietnam+Pro';
+  font-size: 24px;
   background-color: rgb(251, 223, 188);
 }
 
@@ -31,11 +31,7 @@ body {
     margin-left: 60px;
 }
 
-.descarga{
-  display: flex;
-  margin-left: 40vh;
-  margin-top: 10vh;
-}
+
 
 
 #somos {
@@ -82,90 +78,7 @@ span:hover{
   background-color: #fff;
 }
 
-/* .sidebar {
-  position: fixed;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background: #310404;
-  transition: all .5s ease;
-}
-.sidebar header {
-  font-size: 22px;
-  color: white;
-  line-height: 70px;
-  text-align: center;
-  background: #460b06;
-  user-select: none;
-  
-}
 
-.sidebar ul a{
-  display: block;
-  height: 100%;
-  width: 100%;
-  line-height: 65px;
-  font-size: 20px;
-  color: white;
-  padding-left: 40px;
-  padding-top: 10px;
-  padding: 29px;
-  box-sizing: border-box;
-  border-bottom: 1px solid black;
-  border-top: 1px solid rgba(255, 255, 255, 0.249);
-  transition: .4s all;
-}
-ul li:hover a{
-  padding-left: 50px;
-  color: rgba(255,206,69,1);
-  transition: 0.8s;
-}
-
-.sidebar ul a i{
-  margin-right: 16px;
-}
-#check{
-  display: none;
-}
-
-label #btn,label #cancel{
-  position:absolute;
-  background: #310404;
-  border-radius: 3px;
-  cursor: pointer;
-}
-label #btn{
-  left: 10px;
-  top: 15px;
-  font-size: 25px;
-  color: white;
-  padding: 6px 12px;
-  transition: all .5s;
-}
-
-label #cancel{
-  z-index: 1111;
-  left: -195px;
-  top: 17px;
-  font-size: 30px;
-  color: #ffffff;
-  padding: 4px 9px;
-  transition: all .5s ease;
-}
-#check:checked ~ .sidebar{
-  left: 0;
-}
-#check:checked ~ label #btn{
-  left: 250px;
-  opacity: 0;
-  pointer-events: none;
-}
-#check:checked ~ label #cancel{
-  left: 195px;
-}
-#check:checked ~ section{
-  margin-left: 250px;
-} */
 
 html{
   scroll-behavior:  smooth;
@@ -206,7 +119,6 @@ header{
 }
 
 
-
 #hero{
   display: flex;
   align-items: center;
@@ -225,13 +137,19 @@ header{
   background-position: center center;
 }
 
+
+
 #hero h1{
   color: white;
 }
 
 #hero button{
-  font-size: 1.75em;
+  font-size: 1.75em;
 }
+
+
+
+
 
 #somos .container{
   text-align: center;
@@ -355,8 +273,6 @@ footer .container{
   align-items: flex-end;
 }
 
-@media (min-width: 850px){
-
   
 
 #nuestros-programas .programas{
@@ -387,7 +303,7 @@ footer .container{
   font-size: 2em;
 }
 
-}
+
 
 
 label {
@@ -596,10 +512,6 @@ figcaption {
 
 
 
-
-
-
-
 .container {
   display: flex;
   flex-direction: row;
@@ -656,45 +568,27 @@ figcaption {
 #imagen1 {
   position: relative;
   animation-name: mover;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   border-radius: 20px;
   width: 50%;
 }
 
-@keyframes mover {
-  from { left: 0; }
-  to { left: 5px; }
-}
+
 
 #imagen2 {
   position: relative;
   animation-name: mover;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   border-radius: 20px;
   width: 50%;
 }
 
-@keyframes mover {
-  from { right: 0; }
-  to { right: 5px; }
-}
 
 
 @media only screen and (max-width: 768px) {
   .section {
-    width: 80%;
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 500px) {
-  .imagen1 {
-    display: none;
-  }
-}
 
 #logofin{
   height: 80px;
@@ -719,7 +613,8 @@ figcaption {
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 10px;
+  padding: 20px 20px;
+  margin: 20px;
   border-radius: 5px;
   font-size: 1px;
   font-weight: bold;
